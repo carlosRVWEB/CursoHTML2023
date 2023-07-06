@@ -29,4 +29,128 @@
     <a href="https://www.w3.org">
         <img src="https://www.w3.org/cms-uploads/_920xAUTO_crop_center-center_none/marvin-meyer-SYTO3xs06fU-unsplash.jpg" width="100">
     </a>
+    <!--Listas ordenadas y desordenadas-->
+    <ol>
+        <li>Tema 1</li>
+        <li>Tema 2</li>
+        <li>Tema 3</li>
+    </ol>
+    <ul>
+        <li>Tema 1</li>
+        <li>Tema 2</li>
+    </ul>
+
+    <!--Table list-->
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>uno</th>
+                <th>dos</th>
+                <th>tres</th>
+                <th>cuatro</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>uno</th>
+                <th>dos</th>
+                <th>tres</th>
+                <th>cuatro</th>
+            </tr>
+        </tfoot>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr><td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </tbody>
+    </table>
+    <table border="1" width="100%">
+         <tr>
+            <td colspan="3"> 1 </td>
+         </tr>
+         <tr>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+         </tr>
+         <tr>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+         </tr>
+    </table>
+    <table border="1" width="100%">
+        <tr>
+            <td rowspan="3">1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td> 
+        </tr>
+        <tr>
+            <td colspan="2">1</td>
+            
+        </tr>
+    </table>
+
+    <!--Etiquetas de formulario-->
+     <form>
+        <!--Caja de texto 
+    <input type="text"> --hasta 50 caracteres, ya vienen por default
+    <input type="password"> --Vinetas-
+    <input type="number">-- numerico-
+    <input type="date"> -fecha--
+    <input type="radio"> --seleccion simple-
+    <input type="checkbox"> --seleccion multiple
+    <input type="hidden"> --Oculto--
+    <input type="file"> --Subir archivos--
+    -->
+    <input type="text" name="texto ejemplo" placeholder="texto..." required maxlength="10"> <br>
+    <input type="date" value="1992-01-01" min="1992-01-01"> <br>
+    <input type="password"> <br>
+    <input type="number" value="100" readonly> <br>
+    <input type="file"><br>
+    <input id="Hombre" type="radio" value="H" name="genero" checked> <label for="Hombre">Hombre</label>
+    <input id="Mujer" type="radio" value="M" name="genero"> <label for="Mujer">Mujer</label> <br>
+
+    
+    <input type="checkbox" value="A" name="seleccion" checked> A <br>
+    <input type="checkbox" value="B" name="seleccion"> B <br>
+
+    <!--Botones-->
+    <button type="submit">Entregar form</button>
+    <button type="reset">rehacer</button>
+
+    <!--Text area-->
+    <textarea name="nombre" placeholder="Titulo" rows="5" cols="10">Inicio...</textarea>
+
+    <!--select, Lista desplegable-->
+    <select name="" required multiple>
+        <option value="">Seleccione</option>
+        <optgroup label="Select uno">
+            <option value="1"> UNO</option>
+            <option value="2">DOS</option>
+        </optgroup>
+        <optgroup label="Select dos">
+            <option value="3"> 333</option>
+            <option value="4">4444</option>
+        </optgroup>
+    </select>
+    </form> 
 </body>
