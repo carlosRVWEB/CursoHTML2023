@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+p:hover{
+    color: red important;
+}
+p:first-child{
+    color: blue;
+}
+input:focus{
+    background-color: black;
+    color: white;
+}
+input:invalid{
+    color:red;
+}
+p:last-child{
+    color: orange;
+}
+p:nth-child(3){
+    background-color: blue;
+}
+a:link{
+    color: red;
+}
+a:visited{
+    color: green
+}
+a:hover{
+    color:blueviolet;
+}
+a:active{
+    color: black;
+}
+p::first-line{
+    font-size: 50px;
+}
+p::first-letter{
+    color: orange;
+}
+p::after{
+    content: "a->";
+}
+p::before{
+    content: "c:->";
+}
+.round{
+    min-width: 260px;
+    min-height: 80px;
+    background: black;
+    border-radius: 20px;
+    box-shadow: inset 20px 4px 4px rgba(230, 25, 25, 0.9);
+}
+div.background{
+    background: url(imagendeprueba.jpg);
+    border: 2px solid black;
+    position: relative;
+    z-index: 1; /*indica que capa va primero*/
+}
+div.transbox{
+    margin: 30px;
+    position: relative;
+    z-index: 2;
+}
+div.transbox small{
+    margin: 5px;
+    font-weight: bold;
+    color: white;
+}
+/*div.background::before{
+    content:'';
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    background-color: black;
+}*/
+div.background::after{
+    content:'';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+.fixed{
+    position: fixed;
+    background-color: black;
+    top: 0px;
+    z-index: 999;
+}
+.divp{
+    position: relative;
+    min-width: 500px;
+    min-height: 200px;
+    border: 2px dashed blue;
+}
+.divp .div{
+    font-size: 30px;
+    width: 120px;
+    height: 60px;
+}
+.divp .div.a{
+    color: white;
+    background-color: black;
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+.divp .div.b{
+    color: rgb(224, 7, 7);
+    background-color: rgb(41, 107, 128);
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+.divp .div.c{
+    color: rgb(69, 21, 202);
+    background-color: rgb(243, 10, 10);
+    position:absolute;
+    bottom: 0;
+    right: 0;
+}
+.divp .div.d{
+    color: rgba(15, 1, 1, 0.918);
+    background-color: rgb(14, 214, 47);
+    position:absolute;
+    bottom: 0;
+    left: 0;
+}
+.divp .div.e{
+    color: rgba(132, 161, 26, 0.918);
+    background-color: rgb(137, 59, 201);
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
