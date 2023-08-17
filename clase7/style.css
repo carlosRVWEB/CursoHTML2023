@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.principal{
+    display: flex;
+    height: 20vh;
+    background-color: crimson;
+}
+.principal .img{
+    background-color: aqua;
+    margin: 20px;
+    width: 30%;
+}
+.principal .descripcion{
+    background-color: aqua;
+    margin: 20px;
+    width: 70%;
+}
+.secundario{
+    display: flex;
+    background-color: crimson;
+}
+.secundario .itemA{
+    width: 30%;
+    margin: 20px;
+    background-color: aqua;
+}
+.secundario .itemB{
+    width: 70%;
+    margin: 20px;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.secundario .itemB div{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: rgb(245, 89, 17);
+}
+.rotate{
+    transform: rotate(45deg);
+}
+.scale{
+    transform: scale(1.5 , 10);
+}
+.skewX{
+    transform: skewX(35deg);
+}
+.skewY{
+    transform: skewY(45deg);
+}
+.skew{
+    transform: skew(30deg, 10deg);
+}
+.trans{
+    width: 100px !important;
+    height: 100px !important;
+    transition: width 2s, height 4s, transform 6s;
+    transition-timing-function: ease;
+}
+.trans:hover{
+    width: 300px !important;
+    height: 300px !important;
+    transform: rotate(120deg);
+}
+@keyframes nombreAnimacion{
+    0%{ background-color: blueviolet; color: crimson; left: 0;top: 0;}
+    20%{ background-color: brown; color: white;left: 150px; top: 100px;}
+    50%{ background-color: cyan; color: black; left: 100px; top: 150px;}
+    100%{background-color: darkgreen;color: red;left: 0; top: 0;}
+}
+.animacion{
+    position: relative;
+    animation-name: nombreAnimacion;
+    animation-duration: 10s;
+    animation-iteration-count: 2;
+}
+.animacion:hover{
+    animation-name: nombreAnimacion;
+    animation-duration: 10s;
+}
