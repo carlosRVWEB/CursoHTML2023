@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: auto;
+    padding: 100px;
+}
+.item1{
+    display: grid;
+    border: solid cadetblue 2px;
+    height: 90vh;
+    width: 80%;
+    grid-template-areas: 'itemA itemA itemB'
+                         'itemA itemA itemC';
+}
+.item1 .itemA{
+    grid-area: itemA;
+    grid-template-columns: 2fr 2fr 2fr;
+    background-color: rgb(29, 156, 206);
+    border: solid cadetblue 2px;
+}
+.item1 .itemB{
+    grid-area: itemB;
+    grid-template-rows: 2fr;
+    background-color: white;
+    border: solid cadetblue 2px;
+}
+.item1 .itemC{
+    grid-area: itemC;
+    grid-template-rows: 2fr;
+    background-color: white;
+    border: solid cadetblue 2px;
+}
