@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(85, 158, 218);
+    color: rgb(196, 17, 121);
+    padding: 2px;
+    margin: 20px;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: darkred;
+}
+img{
+    width: 30%; 
+    height: auto;
+    border: 2px solid black;
+    margin: 2px;
+    padding: 2px;
+}
+p {font-family: sans-serif;
+color:darkgreen;}
